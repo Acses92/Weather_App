@@ -16,3 +16,10 @@ dependencyResolutionManagement {
 rootProject.name = "Weather App"
 include(":app")
 //include(":buildSrc")
+include(":buildSource")
+include(":domain")
+include(":data")
+include(":common:common-android")
+include(":common:common-java")
+include(":presentation:mainFragment")
+include(":presentation:detailFragment")
