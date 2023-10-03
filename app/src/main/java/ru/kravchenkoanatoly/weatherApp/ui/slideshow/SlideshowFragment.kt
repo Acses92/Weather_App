@@ -1,4 +1,4 @@
-package ru.kravchenkoanatoly.weatherapp.ui.slideshow
+package ru.kravchenkoanatoly.weatherApp.ui.slideshow
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -8,7 +8,7 @@ android {
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "ru.kravchenkoanatoly.weatherapp"
+        applicationId = "ru.kravchenkoanatoly.weatherApp"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="ru.kravchenkoanatoly.weatherapp.ui.home.HomeFragment"
+        android:name="ru.kravchenkoanatoly.weatherApp.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="ru.kravchenkoanatoly.weatherapp.ui.gallery.GalleryFragment"
+        android:name="ru.kravchenkoanatoly.weatherApp.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="ru.kravchenkoanatoly.weatherapp.ui.slideshow.SlideshowFragment"
+        android:name="ru.kravchenkoanatoly.weatherApp.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
 </navigation>

@@ -1,4 +1,4 @@
-package ru.kravchenkoanatoly.weatherapp
+package ru.kravchenkoanatoly.weatherApp
 
 import android.os.Bundle
 import android.view.Menu
@@ -11,6 +11,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import ru.kravchenkoanatoly.weatherapp.R
 import ru.kravchenkoanatoly.weatherapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

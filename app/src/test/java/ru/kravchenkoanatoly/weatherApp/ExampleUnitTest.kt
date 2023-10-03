@@ -1,4 +1,4 @@
-package ru.kravchenkoanatoly.weatherapp
+package ru.kravchenkoanatoly.weatherApp
 
 import org.junit.Test
 
