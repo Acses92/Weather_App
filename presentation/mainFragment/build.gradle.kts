@@ -1,43 +1,44 @@
+import ru.kravchenkoAnatoly.weatherApp.Dependencies
+
 plugins {
-    id("com.android.library")
-    id("org.jetbrains.kotlin.android")
+    id(ProjectConfig.PluginsIds.androidLibrary)
+    id(ProjectConfig.PluginsIds.kotlin)
 }
 
+
 android {
-    namespace = "ru.kravchenkoanatoly.weatherapp.mainfragment"
-    compileSdk = 33
+    namespace = ProjectConfig.namespace()
+    compileSdk = ProjectConfig.ConfigData.compileSdk
 
     defaultConfig {
-        minSdk = 24
+        minSdk = ProjectConfig.ConfigData.androidMinSdk
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles("consumer-rules.pro")
+        testInstrumentationRunner = ProjectConfig.testRunner
+        //consumerProguardFiles(ProjectConfig.ProGuardSettings.consumerRules)
     }
 
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
+            proguardFiles(getDefaultProguardFile(ProjectConfig.ProGuardSettings.androidOptimize),
+                ProjectConfig.ProGuardSettings.rules)
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = ProjectConfig.javaVersion
+        targetCompatibility = ProjectConfig.javaVersion
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = ProjectConfig.javaVersion.toString()
     }
 }
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.9.0")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation(Dependencies.AndroidX.androidCore)
+    implementation(Dependencies.AndroidX.appCompat)
+    implementation(Dependencies.UI.material)
+    testImplementation(Dependencies.Test.jUnit)
+    androidTestImplementation(Dependencies.Test.jUnitExt)
+    androidTestImplementation(Dependencies.Test.espresso)
 }

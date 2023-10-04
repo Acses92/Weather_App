@@ -12,7 +12,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/buildSource" />
+            <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/common" />
             <option value="$PROJECT_DIR$/common/common-android" />
             <option value="$PROJECT_DIR$/common/common-java" />
@@ -21,6 +21,7 @@
             <option value="$PROJECT_DIR$/presentation" />
             <option value="$PROJECT_DIR$/presentation/detailFragment" />
             <option value="$PROJECT_DIR$/presentation/mainFragment" />
+            <option value="$PROJECT_DIR$/presentation/settingFragment" />
           </set>
         </option>
       </GradleProjectSettings>

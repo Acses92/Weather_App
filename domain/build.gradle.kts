@@ -1,9 +1,9 @@
 plugins {
-    id("java-library")
-    id("org.jetbrains.kotlin.jvm")
+    id(ProjectConfig.PluginsIds.javaLibrary)
+    id(ProjectConfig.PluginsIds.kotlinJvm)
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = ProjectConfig.javaVersion
+    targetCompatibility = ProjectConfig.javaVersion
 }
