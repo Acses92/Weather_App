@@ -18,4 +18,11 @@ sealed class Modules(val root: String?, val name: String) {
         }
     }
 
+    class Common(name: String): Modules("common", name) {
+        companion object {
+            val commonaAndroid = Modules.Common("common-android")
+            val commonJava = Modules.Common("common-java")
+        }
+    }
+
 }

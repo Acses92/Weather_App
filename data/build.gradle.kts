@@ -1,8 +1,11 @@
+import ProjectConfig.dep
 import ru.kravchenkoAnatoly.weatherApp.Dependencies
 
 plugins {
     id(ProjectConfig.PluginsIds.androidLibrary)
     id(ProjectConfig.PluginsIds.kotlin)
+    id(ProjectConfig.PluginsIds.kapt)
+    id(ProjectConfig.PluginsIds.hilt)
 }
 
 android {
@@ -33,10 +36,33 @@ android {
 }
 
 dependencies {
+    implementation(project(dep(ru.kravchenkoAnatoly.weatherApp.Modules.Root.domain)))
 
+    //core
     implementation(Dependencies.AndroidX.androidCore)
     implementation(Dependencies.AndroidX.appCompat)
     implementation(Dependencies.UI.material)
+
+    //retrofit
+    implementation(Dependencies.Retrofit.retrofit)
+    implementation(Dependencies.Retrofit.converterMoshi)
+    implementation(Dependencies.Debuging.okhttpLoging)
+
+    //hilt
+    implementation(Dependencies.Hilt.hiltAndroid)
+    kapt(Dependencies.Hilt.hiltCompiler)
+
+    //room
+    implementation(Dependencies.Room.runtime)
+    implementation(Dependencies.Room.ktx)
+    kapt(Dependencies.Room.compiler)
+
+    //moshi
+    implementation(Dependencies.Moshi.moshi)
+    implementation(Dependencies.Moshi.moshiAdapters)
+    implementation(Dependencies.Moshi.moshiKotlin)
+    kapt(Dependencies.Moshi.moshiCodegen)
+
     testImplementation(Dependencies.Test.jUnit)
     androidTestImplementation(Dependencies.Test.jUnitExt)
     androidTestImplementation(Dependencies.Test.espresso)
