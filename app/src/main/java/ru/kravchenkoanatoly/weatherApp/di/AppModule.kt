@@ -8,8 +8,11 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
+import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import org.apache.http.params.HttpParams
+import retrofit2.Retrofit
+import retrofit2.converter.moshi.MoshiConverterFactory
+import ru.kravchenkoanatoly.weatherApp.data.sources.local.AppConstant.baseApiUrl
 import ru.kravchenkoanatoly.weatherApp.data.sources.local.AppConstant.databaseName
 import ru.kravchenkoanatoly.weatherApp.data.sources.local.AppDatabase
 import ru.kravchenkoanatoly.weatherApp.data.sources.local.AppPreferences
@@ -40,5 +43,23 @@ object AppModule{
             Moshi.Builder()
                 .build()
 
+    @Provides
+    @Singleton
+    fun provideOkkHttpClient(
+    ): OkHttpClient = OkHttpClient.Builder().build()
 
+
+    @Provides
+    @Singleton
+    fun provideRetrofitApi(
+        client: OkHttpClient,
+        moshi: Moshi
+    ): Retrofit = getRetrofit(baseUrl = baseApiUrl, client, moshi)
+
+    private fun getRetrofit(baseUrl: String, client: OkHttpClient, moshi: Moshi): Retrofit =
+            Retrofit.Builder()
+                .baseUrl(baseUrl)
+                .addConverterFactory(MoshiConverterFactory.create(moshi))
+                .client(client)
+                .build()
 }

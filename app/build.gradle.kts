@@ -45,7 +45,6 @@ android {
 }
 
 dependencies {
-    implementation(project(dep(Modules.Root.app)))
     implementation(project(dep(Modules.Root.data)))
     implementation(project(dep(Modules.Root.domain)))
     implementation(project(dep(Modules.Common.commonJava)))

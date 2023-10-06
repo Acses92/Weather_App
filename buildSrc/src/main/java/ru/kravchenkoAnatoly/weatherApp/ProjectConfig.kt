@@ -13,7 +13,7 @@ object ProjectConfig {
     fun DependencyHandlerDelegate.dep(modules: Modules): String =
             "${if (modules.root != null) ":${modules.root}" else ""}:${modules.name}"
 
-    val javaVersion = JavaVersion.VERSION_1_8
+    val javaVersion = JavaVersion.VERSION_17
 
 
     object ConfigData{
@@ -27,7 +27,7 @@ object ProjectConfig {
     object PluginsVersion{
         const val androidGradleVersion = "8.1.2"
         const val kotlinVersion = "1.9.0"
-        const val hiltVersion = "2.45"
+        const val hiltVersion = "2.48"
         const val benManesVersion = "0.42.0"
         const val gmsVersion = "4.3.15"
     }
