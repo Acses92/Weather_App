@@ -72,13 +72,14 @@ dependencies {
     implementation(Dependencies.Retrofit.converterMoshi)
     implementation(Dependencies.Debuging.okhttpLoging)
 
-    //debugging
+    //hilt
     implementation(Dependencies.Hilt.hiltAndroid)
     kapt(Dependencies.Hilt.hiltCompiler)
 
     //room
     implementation(Dependencies.Room.runtime)
 
+    implementation(Dependencies.Debuging.timber)
     testImplementation(Dependencies.Test.jUnit)
     androidTestImplementation(Dependencies.Test.jUnitExt)
     androidTestImplementation(Dependencies.Test.espresso)

@@ -25,7 +25,7 @@ object ProjectConfig {
     }
 
     object PluginsVersion{
-        const val androidGradleVersion = "8.1.2"
+        const val androidGradleVersion = "8.0.2"
         const val kotlinVersion = "1.9.0"
         const val hiltVersion = "2.48"
         const val benManesVersion = "0.42.0"

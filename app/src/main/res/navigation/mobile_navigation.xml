@@ -3,23 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
-
+    app:startDestination="@id/mainFragment">
     <fragment
-        android:id="@+id/nav_home"
-        android:name="ru.kravchenkoanatoly.weatherApp.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
-
+        android:id="@+id/mainFragment"
+        android:name="ru.kravchenkoanatoly.weatherapp.mainfragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="ru.kravchenkoanatoly.weatherApp.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/detailFragment"
+        android:name="ru.kravchenkoanatoly.weatherapp.detailfragment.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="ru.kravchenkoanatoly.weatherApp.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/settingsFragment"
+        android:name="ru.kravchenkoanatoly.weatherapp.settingfragment.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
 </navigation>
