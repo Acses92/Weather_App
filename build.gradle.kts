@@ -6,3 +6,7 @@ plugins {
     id(ProjectConfig.PluginsIds.androidLibrary) version ProjectConfig.PluginsVersion.androidGradleVersion apply false
     id(ProjectConfig.PluginsIds.hilt) version ProjectConfig.PluginsVersion.hiltVersion apply false
 }
+
+task<Delete>("clean") {
+    delete(rootProject.buildDir)
+}
