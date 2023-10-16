@@ -13,18 +13,14 @@ import ru.kravchenkoanatoly.weatherapp.settingfragment.SettingsFragmentNavigatio
 
 @Module
 @InstallIn(SingletonComponent::class)
-object NavigationModules {
+interface NavigationModules {
+    @Binds
+    fun bindMainFragmentNavigationProvider(arg: MainFragmentNavigationProviderImpl): MainFragmentNavigationProvider
 
-    @Module
-    @InstallIn(SingletonComponent::class)
-    abstract class BindNavigationModule {
-        @Binds
-        abstract fun bindMainFragmentNavigationProvider(arg: MainFragmentNavigationProviderImpl): MainFragmentNavigationProvider
+    @Binds
+    fun bindDetailFragmentNavigationProvider(arg: DetailFragmentNavigationProviderImpl): DetailFragmentNavigationProvider
 
-        @Binds
-        abstract fun bindDetailFragmentNavigationProvider(arg: DetailFragmentNavigationProviderImpl): DetailFragmentNavigationProvider
+    @Binds
+    fun bindSettingFragmentNavigationProvider(arg: SettingsFragmentNavigationProviderImpl): SettingsFragmentNavigationProvider
 
-        @Binds
-        abstract fun bindSettingFragmentNavigationProvider(arg: SettingsFragmentNavigationProviderImpl): SettingsFragmentNavigationProvider
-    }
 }
