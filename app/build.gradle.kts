@@ -45,13 +45,14 @@ android {
 }
 
 dependencies {
-    implementation(project(dep(Modules.Root.data)))
-    implementation(project(dep(Modules.Root.domain)))
     implementation(project(dep(Modules.Common.commonJava)))
     implementation(project(dep(Modules.Common.commonaAndroid)))
-    implementation(project(dep(Modules.Presentation.detailFragment)))
-    implementation(project(dep(Modules.Presentation.mainFragment)))
-    implementation(project(dep(Modules.Presentation.settingsFragment)))
+ //   implementation(project(dep(Modules.Feature.detailScreenFeature)))
+ //   implementation(project(dep(Modules.Feature.mainScreenFeature)))
+ //   implementation(project(dep(Modules.Feature.settingsScreenFeature)))
+    implementation(project(dep(Modules.Data.weatherData)))
+    implementation(project(dep(Modules.Data.root)))
+
 
     //core
     implementation(Dependencies.AndroidX.androidCore)
@@ -74,6 +75,7 @@ dependencies {
 
     //hilt
     implementation(Dependencies.Hilt.hiltAndroid)
+    //implementation(project(mapOf("path" to ":feature:mainScreenFeature")))
     kapt(Dependencies.Hilt.hiltCompiler)
 
     //room

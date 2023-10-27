@@ -15,10 +15,13 @@ dependencyResolutionManagement {
 
 rootProject.name = "Weather App"
 include(":app")
-include(":domain")
+include(":common")
 include(":data")
+include(":feature")
 include(":common:common-android")
 include(":common:common-java")
-include(":presentation:mainFragment")
-include(":presentation:detailFragment")
-include(":presentation:settingFragment")
+include(":feature:mainScreenFeature")
+include(":feature:detailScreenFeature")
+include(":feature:settingScreenFeature")
+include(":data:weatherData")
+
