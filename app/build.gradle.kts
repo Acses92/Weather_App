@@ -13,6 +13,10 @@ android {
     namespace = ProjectConfig.namespace()
     compileSdk = ProjectConfig.ConfigData.compileSdk
 
+    hilt {
+        enableAggregatingTask = false
+    }
+
     defaultConfig {
         applicationId = ProjectConfig.applicationId
         minSdk = ProjectConfig.ConfigData.androidMinSdk
