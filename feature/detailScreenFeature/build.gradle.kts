@@ -38,8 +38,7 @@ android {
 }
 
 dependencies {
-    implementation(project(dep(Modules.Common.commonaAndroid)))
-    implementation(project(dep(Modules.Common.commonJava)))
+    implementation(project(dep(Modules.Common.root)))
 
     implementation(Dependencies.AndroidX.androidCore)
     implementation(Dependencies.AndroidX.appCompat)

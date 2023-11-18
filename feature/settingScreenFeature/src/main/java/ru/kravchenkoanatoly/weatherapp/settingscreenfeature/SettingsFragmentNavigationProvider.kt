@@ -1,6 +1,6 @@
 package ru.kravchenkoanatoly.weatherapp.settingscreenfeature
 
-import ru.kravchenkoanatoly.weatherApp.common_android.NavCommand
+import ru.kravchenkoanatoly.common.NavCommand
 
 interface SettingsFragmentNavigationProvider {
     fun goToMainFragment(): NavCommand

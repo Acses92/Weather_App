@@ -8,7 +8,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import dagger.hilt.android.AndroidEntryPoint
-import ru.kravchenkoanatoly.weatherApp.common_android.BaseActivity
+import ru.kravchenkoanatoly.common.BaseActivity
 import ru.kravchenkoanatoly.weatherapp.R
 import ru.kravchenkoanatoly.weatherapp.databinding.ActivityMainBinding
 

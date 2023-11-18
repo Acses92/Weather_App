@@ -45,11 +45,10 @@ android {
 }
 
 dependencies {
-    implementation(project(dep(Modules.Common.commonJava)))
-    implementation(project(dep(Modules.Common.commonaAndroid)))
- //   implementation(project(dep(Modules.Feature.detailScreenFeature)))
- //   implementation(project(dep(Modules.Feature.mainScreenFeature)))
- //   implementation(project(dep(Modules.Feature.settingsScreenFeature)))
+    implementation(project(dep(Modules.Common.root)))
+    implementation(project(dep(Modules.Feature.detailScreenFeature)))
+    implementation(project(dep(Modules.Feature.mainScreenFeature)))
+    implementation(project(dep(Modules.Feature.settingsScreenFeature)))
     implementation(project(dep(Modules.Data.weatherData)))
     implementation(project(dep(Modules.Data.root)))
 

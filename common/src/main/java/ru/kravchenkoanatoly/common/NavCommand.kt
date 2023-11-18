@@ -1,4 +1,4 @@
-package ru.kravchenkoanatoly.weatherApp.common_android
+package ru.kravchenkoanatoly.common
 
 import android.os.Bundle
 import androidx.navigation.NavOptions

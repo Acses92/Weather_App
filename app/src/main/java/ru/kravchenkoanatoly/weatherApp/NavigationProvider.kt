@@ -1,6 +1,6 @@
 package ru.kravchenkoanatoly.weatherApp
 
-import ru.kravchenkoanatoly.weatherApp.common_android.NavCommand
+import ru.kravchenkoanatoly.common.NavCommand
 import ru.kravchenkoanatoly.weatherapp.R
 import ru.kravchenkoanatoly.weatherapp.detailscreenfeature.DetailFragmentNavigationProvider
 import ru.kravchenkoanatoly.weatherapp.mainscreenfeature.MainFragmentNavigationProvider

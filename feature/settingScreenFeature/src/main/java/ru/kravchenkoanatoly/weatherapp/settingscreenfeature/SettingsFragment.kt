@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import dagger.hilt.android.AndroidEntryPoint
-import ru.kravchenkoanatoly.weatherApp.common_android.BaseFragment
+import ru.kravchenkoanatoly.common.BaseFragment
 import ru.kravchenkoanatoly.weatherapp.R
 
 // TODO: Rename parameter arguments, choose names that match

@@ -1,4 +1,4 @@
-package ru.kravchenkoanatoly.weatherApp.common_android
+package ru.kravchenkoanatoly.common
 
 import androidx.annotation.LayoutRes
 import androidx.fragment.app.Fragment
