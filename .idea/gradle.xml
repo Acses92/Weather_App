@@ -14,14 +14,12 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/common" />
-            <option value="$PROJECT_DIR$/common/common-android" />
-            <option value="$PROJECT_DIR$/common/common-java" />
             <option value="$PROJECT_DIR$/data" />
-            <option value="$PROJECT_DIR$/domain" />
-            <option value="$PROJECT_DIR$/presentation" />
-            <option value="$PROJECT_DIR$/presentation/detailFragment" />
-            <option value="$PROJECT_DIR$/presentation/mainFragment" />
-            <option value="$PROJECT_DIR$/presentation/settingFragment" />
+            <option value="$PROJECT_DIR$/data/weatherData" />
+            <option value="$PROJECT_DIR$/feature" />
+            <option value="$PROJECT_DIR$/feature/detailScreenFeature" />
+            <option value="$PROJECT_DIR$/feature/mainScreenFeature" />
+            <option value="$PROJECT_DIR$/feature/settingScreenFeature" />
           </set>
         </option>
       </GradleProjectSettings>

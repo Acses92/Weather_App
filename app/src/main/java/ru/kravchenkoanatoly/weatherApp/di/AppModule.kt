@@ -11,10 +11,8 @@ import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
-import ru.kravchenkoanatoly.weatherApp.data.sources.local.AppConstant.baseApiUrl
-import ru.kravchenkoanatoly.weatherApp.data.sources.local.AppConstant.databaseName
-import ru.kravchenkoanatoly.weatherApp.data.sources.local.AppDatabase
-import ru.kravchenkoanatoly.weatherApp.data.sources.local.AppPreferences
+import ru.kravchenkoanatoly.data.sources.local.AppConstant.baseApiUrl
+import ru.kravchenkoanatoly.data.sources.local.AppConstant.databaseName
 import javax.inject.Singleton
 
 @Module
@@ -22,8 +20,8 @@ import javax.inject.Singleton
 object AppModule{
     @Provides
     @Singleton
-    fun provideSharedPreferences(@ApplicationContext context: Context): AppPreferences =
-            AppPreferences(
+    fun provideSharedPreferences(@ApplicationContext context: Context): ru.kravchenkoanatoly.data.sources.local.AppPreferences =
+            ru.kravchenkoanatoly.data.sources.local.AppPreferences(
                 context.getSharedPreferences(
                     "app_shared_preferences",
                     Context.MODE_PRIVATE
@@ -32,8 +30,9 @@ object AppModule{
 
     @Provides
     @Singleton
-    fun provideAppDatabase(@ApplicationContext context: Context): AppDatabase =
-            Room.databaseBuilder(context,AppDatabase::class.java, databaseName )
+    fun provideAppDatabase(@ApplicationContext context: Context): ru.kravchenkoanatoly.data.sources.local.AppDatabase =
+            Room.databaseBuilder(context,
+                ru.kravchenkoanatoly.data.sources.local.AppDatabase::class.java, databaseName )
                 .build()
 
     @Provides

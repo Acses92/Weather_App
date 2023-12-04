@@ -6,7 +6,7 @@
     app:startDestination="@id/mainFragment">
     <fragment
         android:id="@+id/mainFragment"
-        android:name="ru.kravchenkoanatoly.weatherapp.mainfragment.MainFragment"
+        android:name="ru.kravchenkoanatoly.weatherapp.mainscreenfeature.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="ru.kravchenkoanatoly.weatherapp.detailfragment.DetailFragment"
+        android:name="ru.kravchenkoanatoly.weatherapp.detailscreenfeature.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" >
         <action
@@ -30,7 +30,7 @@
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="ru.kravchenkoanatoly.weatherapp.settingfragment.SettingsFragment"
+        android:name="ru.kravchenkoanatoly.weatherapp.settingscreenfeature.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" >
         <action
