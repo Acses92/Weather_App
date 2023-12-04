@@ -3,18 +3,8 @@
 Sapp/src/androidTest/java/ru/kravchenkoanatoly/weatherApp/ExampleInstrumentedTest.kt,a\f\aff109a21c07fd44f0ddda15e58f2030fefaba77
 t
 Dapp/src/test/java/ru/kravchenkoanatoly/weatherApp/ExampleUnitTest.kt,7\a\7a28d50aa0b3876fb8586984ae53cc9c2992eaea
-M
-common/common-java/.gitignore,4\0\408baf5c16408aa4c9b84ee5222cfdce05619190
-P
- common/common-android/.gitignore,1\8\187e9b7f2ca87fc343306c5b2674678530f44d2a
 ?
 data/.gitignore,d\1\d1977b1bb1b3e249de790289a11d8f31156df269
-¤
-tcommon/common-android/src/androidTest/java/ru/kravchenkoanatoly/weatherApp/common_android/ExampleInstrumentedTest.kt,5\8\5839ac9c9631262d51d25d958763298e5e7680f9
-•
-ecommon/common-android/src/test/java/ru/kravchenkoanatoly/weatherApp/common_android/ExampleUnitTest.kt,3\d\3dec2004a6ff6b6f2a0ab67fa00c43b009657129
-‡
-Wcommon/common-java/src/main/java/ru/kravchenkoanatoly/weatherApp/common_java/MyClass.kt,7\a\7a81b958a58330652ebb4f93407f5e10a5c0585a
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
@@ -24,18 +14,10 @@ F
 app/proguard-rules.pro,9\e\9e08934d811afe28fbc77aaa3c0d747b94348db9
 w
 GbuildSrc/src/main/java/ru/kravchenkoAnatoly/weatherApp/ProjectConfig.kt,1\c\1cd5d95b199674131cdc0dcf2002064312b260e7
-’
-bcommon/common-android/src/main/java/ru/kravchenkoanatoly/weatherApp/common_android/BaseFragment.kt,7\5\754618485ded0617c2176ac691bb66f3a866d077
-’
-bcommon/common-android/src/main/java/ru/kravchenkoanatoly/weatherApp/common_android/BaseActivity.kt,a\1\a1ba2e94ffdcd8fb21a735324915ef3d0e7140be
 v
 FbuildSrc/src/main/java/ru/kravchenkoAnatoly/weatherApp/Dependencies.kt,b\b\bbaceb73d5965d0e3fb24df7f097fec92d10e8d5
 I
 buildSrc/build.gradle.kts,d\9\d90b697280fada81e52ec92d24725920f1cb087b
-V
-&common/common-android/build.gradle.kts,7\7\779f4e6d6e2e446c6454bd368ca899c967c662e8
-S
-#common/common-java/build.gradle.kts,1\e\1ee6229de0033d606001cbd0025dc23c9825f12d
 E
 data/build.gradle.kts,9\f\9f5470ef43fd1acab01d54a63bdece9a90dec1b7
 Q
