@@ -15,6 +15,7 @@ android {
 
     hilt {
         enableAggregatingTask = false
+        enableExperimentalClasspathAggregation = true
     }
 
     defaultConfig {
