@@ -1,4 +1,4 @@
-package ru.kravchenkoanatoly.weatherapp.settingscreenfeature
+package ru.kravchenkoanatoly.weatherApp.settingscreenfeature
 
 import org.junit.Test
 

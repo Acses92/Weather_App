@@ -1,10 +1,9 @@
 package ru.kravchenkoanatoly.weatherApp
 
 import ru.kravchenkoanatoly.common.NavCommand
-import ru.kravchenkoanatoly.weatherapp.R
-import ru.kravchenkoanatoly.weatherapp.detailscreenfeature.DetailFragmentNavigationProvider
-import ru.kravchenkoanatoly.weatherapp.mainscreenfeature.MainFragmentNavigationProvider
-import ru.kravchenkoanatoly.weatherapp.settingscreenfeature.SettingsFragmentNavigationProvider
+import ru.kravchenkoanatoly.weatherApp.detailscreenfeature.DetailFragmentNavigationProvider
+import ru.kravchenkoanatoly.weatherApp.mainscreenfeature.MainFragmentNavigationProvider
+import ru.kravchenkoanatoly.weatherApp.settingscreenfeature.SettingsFragmentNavigationProvider
 import javax.inject.Inject
 
 class MainFragmentNavigationProviderImpl @Inject constructor(): MainFragmentNavigationProvider {

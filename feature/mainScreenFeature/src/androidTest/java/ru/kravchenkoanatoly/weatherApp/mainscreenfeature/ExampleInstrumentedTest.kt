@@ -1,4 +1,4 @@
-package ru.kravchenkoanatoly.weatherapp.mainscreenfeature
+package ru.kravchenkoanatoly.weatherApp.mainscreenfeature
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

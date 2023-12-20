@@ -4,7 +4,7 @@ import org.gradle.kotlin.dsl.support.delegates.DependencyHandlerDelegate
 import ru.kravchenkoAnatoly.weatherApp.Modules
 
 object ProjectConfig {
-    const val applicationId = "ru.kravchenkoanatoly.weatherapp"
+    const val applicationId = "ru.kravchenkoanatoly.weatherApp"
     const val testRunner = "androidx.test.runner.AndroidJUnitRunner"
 
     fun namespace(modules: Modules? = null): String =

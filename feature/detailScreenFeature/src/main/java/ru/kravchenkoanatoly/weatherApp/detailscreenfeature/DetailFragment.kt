@@ -1,4 +1,4 @@
-package ru.kravchenkoanatoly.weatherapp.detailscreenfeature
+package ru.kravchenkoanatoly.weatherApp.detailscreenfeature
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import dagger.hilt.android.AndroidEntryPoint
 import ru.kravchenkoanatoly.common.BaseFragment
-import ru.kravchenkoanatoly.weatherapp.R
+import ru.kravchenkoanatoly.weatherApp.R
 
 
 @AndroidEntryPoint

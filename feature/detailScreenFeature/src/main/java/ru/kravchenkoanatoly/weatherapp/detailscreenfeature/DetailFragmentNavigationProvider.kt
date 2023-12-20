@@ -1,4 +1,4 @@
-package ru.kravchenkoanatoly.weatherapp.detailscreenfeature
+package ru.kravchenkoanatoly.weatherApp.detailscreenfeature
 
 import ru.kravchenkoanatoly.common.NavCommand
 
