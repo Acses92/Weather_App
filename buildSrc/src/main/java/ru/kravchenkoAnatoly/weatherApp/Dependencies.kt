@@ -106,5 +106,11 @@ object Dependencies {
         const val converterMoshi = "com.squareup.retrofit2:converter-moshi:$retrofitVersion"
     }
 
+    object PlayServices {
+        private const val playServicesVersion = "21.0.1"
+
+        const val playServiceLocation = "com.google.android.gms:play-services-location:$playServicesVersion"
+    }
+
 
 }

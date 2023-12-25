@@ -1,3 +1,4 @@
+import ProjectConfig.dep
 import ru.kravchenkoAnatoly.weatherApp.Dependencies
 
 plugins {
@@ -35,11 +36,13 @@ android {
 }
 
 dependencies {
+    implementation(project(dep(ru.kravchenkoAnatoly.weatherApp.Modules.Common.root)))
 
     //core
     implementation(Dependencies.AndroidX.androidCore)
     implementation(Dependencies.AndroidX.appCompat)
     implementation(Dependencies.UI.material)
+    implementation(Dependencies.PlayServices.playServiceLocation)
 
     //retrofit
     implementation(Dependencies.Retrofit.retrofit)

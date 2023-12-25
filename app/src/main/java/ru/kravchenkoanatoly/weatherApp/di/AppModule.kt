@@ -13,6 +13,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import ru.kravchenkoanatoly.data.sources.local.AppConstant.baseApiUrl
 import ru.kravchenkoanatoly.data.sources.local.AppConstant.databaseName
+import ru.kravchenkoanatoly.data.sources.local.LocationProviderImpl
 import javax.inject.Singleton
 
 @Module
@@ -59,4 +60,11 @@ object AppModule{
                 .addConverterFactory(MoshiConverterFactory.create(moshi))
                 .client(client)
                 .build()
+
+
+    @Provides
+    @Singleton
+    fun provideLocationProvider(
+        @ApplicationContext context: Context
+    ): LocationProviderImpl = LocationProviderImpl(context)
 }
